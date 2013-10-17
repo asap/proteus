@@ -4,16 +4,20 @@
 <head>
     <title>{%- block title %}{{ theme_get_info('name') }}{% endblock -%}</title>
 
+    <link rel="stylesheet" href="{{ url_for('blueprint.static', filename='css/global.css') }}">
+    <link rel="stylesheet" href="{{ theme_static('css/style.css') }}">
+    
     {% block style %}{% endblock %}
 
+    {% include theme('meta.html') %}
     {% block meta_tags -%}{%- endblock %}
 </head>
 <body>
-    {% include theme('header.html', false) %}
+    {% include theme('header.html') %}
 
     {%- block content -%}{%- endblock -%}
 
-    {% include theme('footer.html', false) %}
+    {% include theme('footer.html') %}
 
     {% block extra_js %}{% endblock %}
 </body>
