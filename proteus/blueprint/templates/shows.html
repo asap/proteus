@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    {{ ad.render_ad() }}
+
+    {% for show in shows %}
+    <h3>{{ show.name }}</h3>
+    {% endfor %}
+
+{% endblock %}

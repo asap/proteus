@@ -1,0 +1,20 @@
+{% import 'includes/ad.html' as ad %}
+<!doctype html>
+<html>
+<head>
+    <title>{%- block title %}{{ theme_get_info('name') }}{% endblock -%}</title>
+
+    {% block style %}{% endblock %}
+
+    {% block meta_tags -%}{%- endblock %}
+</head>
+<body>
+    {% include theme('header.html', false) %}
+
+    {%- block content -%}{%- endblock -%}
+
+    {% include theme('footer.html', false) %}
+
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

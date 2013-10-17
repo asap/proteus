@@ -1,0 +1,10 @@
+{
+    "application": "proteus", 
+    "identifier": "default_site", 
+    "name": "My Default Site", 
+    "author": "Alex Sapountzis",
+    "license": "To Ill",
+    "description": "My boring web site",
+    "version": "1.0.0",
+    "website": "boringweb.com"
+}

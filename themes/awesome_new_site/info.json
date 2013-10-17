@@ -1,0 +1,10 @@
+{
+    "application": "proteus", 
+    "identifier": "awesome_new_site", 
+    "name": "Awesome Web Site", 
+    "author": "Alex Sapountzis",
+    "license": "To Thrill",
+    "description": "The Best Website EVAR!!!1!",
+    "version": "1.0.0",
+    "website": "awesomeweb.com"
+}

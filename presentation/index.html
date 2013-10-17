@@ -1,0 +1,172 @@
+<!doctype html>
+<!--
+
+     ,gggggggggggggg                                             ,gggggggggggggg ,ggggggggggggggg ,ggg,      gg      ,gg
+dP""""""88"""""" ,dPYb,                       ,dPYb,        dP""""""88""""""dP""""""88"""""""dP""Y8a     88     ,8P 
+Yb,_    88       IP'`Yb                       IP'`Yb        Yb,_    88      Yb,_    88       Yb, `88     88     d8' 
+ `""    88       I8  8I                       I8  8I         `""    88       `""    88        `"  88     88     88  
+     ggg88gggg   I8  8'                       I8  8bgg,          ggg88gggg          88            88     88     88  
+        88   8   I8 dP    ,gggg,gg    ,g,     I8 dP" "8             88   8          88            88     88     88  
+        88       I8dP    dP"  "Y8I   ,8'8,    I8d8bggP"             88              88            88     88     88  
+  gg,   88       I8P    i8'    ,8I  ,8'  Yb   I8P' "Yb,       gg,   88        gg,   88            Y8    ,88,    8P  
+   "Yb,,8P      ,d8b,_ ,d8,   ,d8b,,8'_   8) ,d8    `Yb,       "Yb,,8P         "Yb,,8P             Yb,,d8""8b,,dP   
+     "Y8P'      8P'"Y88P"Y8888P"`Y8P' "YY8P8P88P      Y8         "Y8P'           "Y8P'              "88"    "88"    
+                                                                                                                    
+                                                                                                                    
+                                                                                                                    
+                                                                                                                    
+                                                                                                                    
+http://github.com/asap
+
+-->
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>impress.js | presentation tool based on the power of CSS3 transforms and transitions in modern browsers | by Bartek Szopka @bartaz</title>
+    
+    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <meta name="author" content="Bartek Szopka" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <link href="css/impress.css" rel="stylesheet" />
+    
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+<body class="impress-not-supported">
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress">
+
+    <div id="title" class="step">
+        <h2>Blueprints and You</h2>
+        <h1>Shapeshifting Flask apps with Blueprints and Flask-Themes2</h1>        
+        <span class="footnote">Clone this -> <a href="https://github.com/asap/proteus.git">https://github.com/asap/proteus.git</a></span>
+    </div>
+
+
+    <div class="step slide" data-y="1000">
+        <q>At CBS Local, the business wanted distinctly branded music and sports web sites, but using the same API content.</q>
+    </div>
+
+    <div class="step slide" data-y="2000">
+        <q>At first we thought we should build <b>two different flask apps</b>, but we only had a few Python developers</q>
+
+        <pre style="margin-top: 30px;">
+        if python_dev is not many:
+            panic!
+        </pre>
+    </div>
+
+    <div id="blame-andy" class="step" data-x="-1000" data-y="-2000" data-rotate-z="-90">
+        <p>So someone had a <b class="rotating">crazy</b> idea!</p>
+        <br />
+        <p><i>(this guy)</i> --></p>
+    </div>
+
+    <div id="crazy-idea" class="step" data-x="0" data-y="-2000" data-rotate-z="90">
+        <q>Build <b style="font-size: 2em;">two sites</b> out of a <i style="font-size: 2em;">single flask app</i>?</q>
+        <br />
+        <span class="footnote">...Thats crazy talk!</span>
+    </div>
+
+    <div class="step" data-x="1000" data-y="-2000" data-rotate-z="90">
+
+    <q style="font-size:3em;">But <b>how</b>?</q>
+    <br />
+    <q>...and <i>why</i>?</q>
+    </div>
+
+    <div class="step" data-x="1000" data-y="-1000" data-rotate-z="45">
+        <span style="font-size: 4em;"><b>Blueprints!</b></span>
+        <br />
+        <span class="footnote">(duh)</span>
+    </div>
+
+    <div id="blueprints" class="step" data-x="1000" data-y="0" data-rotate-z="-90">
+
+        <h2>Blueprints</h2>
+    
+        <li>Logic and assets that are shared between sites</li>
+        <li>Keeps things DRY</li>
+        <li>Less complex than Application Dispatching</li>
+
+    </div>
+
+    <div class="step" data-x="1000" data-y="1000" data-rotate-z="-90">
+    ...but wait, what about the whole "distinctly branded" part?
+    </div>
+
+    <div id="flask-themes2" class="step" data-x="1000" data-y="2000" data-rotate-z="-90">
+        <h2>Enter Flask Themes 2!!!</h2>
+        <span class="footnote">(dun dun duuuuuun)</span>
+
+        <li>Provides helpers to switch look & feel at runtime</li>
+
+        <li>Allows for template and partial fallbacks</li>
+
+    </div>
+
+    <div class="step" data-x="-1000" data-y="2000" data-z="-500" data-rotate-x="180" data-rotate-z="90">
+        <h2>Benefits?</h2>
+
+        <li>One Codebase to Rule them All</li>
+        <li>Maintenance <i>should</i> be easier</li>
+        <span class="footnote">...it's Python!</span>
+    </div>
+
+
+    <div class="step" data-x="-1000" data-y="2000" data-z="500" data-rotate-x="180">
+        <h2>The Downside?</h2>
+
+        <p>It's a bit hard to set up at first</p>
+        <span class="footnote">...but we love a challenge!</span>
+    </div>
+
+    <div class="step" data-x="-1000" data-y="1000" data-z="500" data-rotate-x="180">
+        <h2>Not Dynamic</h2>
+        <span class="footnote">...yet</span>
+    
+        <li>Still need to define each "site"</li>
+        <li>Each site needs a config </li>
+        <li>A few hard-coded things I'm not proud of</p>
+        <span class="footnote">This should change as it gets developed</span>
+    </div>
+
+    <div class="step" data-x="-1000" data-y="0" data-z="500" data-rotate-x="180">
+        <h2>Bugs</h2>
+        <p>1 Bug + 100 sites == OH NOEZ!</p>
+    </div>
+
+    <div class="step" data-x="-1000" data-y="-1000" data-z="500" data-rotate-x="180">
+        <h2>WordPress</h2>
+        <p>Someone will likely ask <i>"Why not use WordPress"</i>?</p>
+        <p><b>Punch them!</b></p>
+    </div>
+
+</div>
+
+
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+</body>
+</html>
