@@ -33,9 +33,9 @@ Run the second, more awesome, site in a new terminal session
     $ python runserver.py awesome_new_site
 
 
-Running Tests
-=============
+Links
++++++
 
-To test, (make sure you've installed development requirements) simply::
+Blueprints: http://flask.pocoo.org/docs/blueprints/
 
-    $ nosetests -s tests/
+Flask Themes 2: https://flask-themes2.readthedocs.org/en/latest/
